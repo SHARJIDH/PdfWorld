@@ -1,6 +1,5 @@
 import Features from "@/components/other/features";
 import SlideUpWhenVisible from "@/components/other/slide-up-when-visible";
-import YoutubeEmbed from "@/components/other/youtube-embed";
 import { Button } from "@/components/ui/button";
 import ButtonRotatingBackgroundGradient from "@/components/ui/button-rotating-bg-gradient";
 import { cn } from "@/lib/utils";
@@ -32,7 +31,7 @@ export default function Home() {
           className="fixed bottom-5 right-5 flex items-center justify-center rounded-full bg-black hover:cursor-pointer"
           title="Submit Feedback"
         >
-          <button className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-neutral-950 font-medium text-neutral-200 transition-all duration-300 hover:w-32 ">
+          <button className="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-neutral-950 font-medium text-neutral-200 transition-all duration-300 hover:w-32 " >
             <div className="inline-flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100">
               Feedback
             </div>
@@ -116,7 +115,6 @@ const HeroSection = () => {
           </Button>
         </Link>
       </div>
-      <YoutubeEmbed />
     </SlideUpWhenVisible>
   );
 };
